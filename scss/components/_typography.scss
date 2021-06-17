@@ -44,3 +44,32 @@
     margin-bottom: 1rem;
     background-color: $primary;
 }
+
+.display-3 {
+    font-family: 'Poppins', sans-serif;
+    
+    &--title {
+        font-family: 'Poppins', sans-serif;
+        font-size: 1.2rem;
+        text-transform: capitalize;
+        font-weight: 600;
+        display: inline-block;
+        background-image: linear-gradient(to right, $primary, $secondary);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+
+        @include media-breakpoint-up(lg) {
+            font-size: 1.8rem;
+        }
+    }
+    
+    &--text {
+        font-family: 'Poppins', sans-serif;
+    }
+}
+
+.border-right {
+    border-right: 0.1rem solid $gray-300;
+    height:100%;
+}
